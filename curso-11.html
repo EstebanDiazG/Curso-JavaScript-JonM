@@ -1,0 +1,73 @@
+<!--Funciones-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//una funcion tiene su propio contenido y puede ejecutarse en cualquier momento cuantas veces quiera
+// tambien puede devolver valores
+
+//tenemos dos formas de crear funciones 
+
+//declarada
+
+function estoEsUnaFuncion(){
+    console.log("uno");
+    console.log("dos");
+    console.log("tres");
+}
+
+//invocacion de función
+estoEsUnaFuncion();
+
+
+function unaFuncionQueDevuelveValor(){
+    console.log("uno");
+    return 19;//si hay un return antes ignora todo hasta abajo
+    console.log("dos");
+    console.log("tres");
+    return "la funcion ha retornado una cadena de texto"
+}
+
+let valorDeFuncion = unaFuncionQueDevuelveValor();
+
+//console.log(valorDeFuncion);//esto me devuelve el return
+
+
+
+//ahora recibe valores 
+function saludar(nombre,edad){
+    console.log(`hola mi nombre es ${nombre} ${edad} años.`)
+}
+
+saludar("Esteban", 25);
+
+//funciones declaradas vs funciones expresadas
+
+funcionDeclarada();
+
+function funcionDeclarada(){
+    console.log("la declaro")
+}
+
+funcionDeclarada();
+
+
+//funciones como expresiones 
+//funcion anonima 
+const funcionExpresada= function(){
+console.log("esta es una funcion expresada es decir una funcion que se la ha asignado como valor a una variable si invocamos esta funcion antes de su definicion javascript nos dira..");
+
+}
+//esta funcion no se puede llamar antes de su inicializacion
+funcionExpresada();
+
+    </script>
+</body>
+</html>

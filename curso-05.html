@@ -1,0 +1,48 @@
+<!--CONSTANTES-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Fundamentos de javascript!</H1>
+
+    <script>
+const PI = 3.1416;
+//const NUEVE; // ACA FALLA PORQUE LAS CONSTANTES NO PUEDEN ESTAR VACIAS PERO LET SI PERMITE UNA VARIABLE VACIA
+
+//esta constante no puedo asignarle otro valor 
+
+console.log(PI);
+
+
+const objeto = {
+    nombre:"esteban",
+    edad: 25
+}
+
+const colores = ["blanco","negro","azul"];
+
+console.log(objeto);
+console.log(colores);
+
+objeto.correo = "esteban@gmail.com"
+colores.push("rojo");
+//despues de agrregar imprimo y recien me aparece todo
+console.log(objeto);
+console.log(colores);
+
+
+// aqui si le coloco const al ser compuestos este tipo de dato la palabra const me permite agregarle igual aunque sea una constante!
+
+    </script>
+
+
+</body>
+</html>
+
+
+<!--las constantes no cambian su valor durante el flujo de mi aplicacion-->

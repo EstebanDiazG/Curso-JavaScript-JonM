@@ -1,0 +1,49 @@
+<!--VARIABLES -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fundamentos de Javascript</h1>
+    <script>
+        var hola = "Hola mundo"
+        console.log(hola);
+
+        let MINOMBRE = "Esteban Diaz"
+        console.log(MINOMBRE);
+
+        console.log(window);
+
+        console.log(window.hola); //aca esta en ambito global
+
+        var musica ="rock"
+        console.log("variable musica antes del bloque",musica)
+        
+        {
+            var musica = "pop";
+            console.log("variable musica antes del bloque",musica);
+        }
+
+        console.log("variable musica antes del bloque", musica)
+
+
+    </script>
+</body>
+</html>
+
+
+<!--
+
+° javascript no tenia ambito de bloque
+la tenemos que declarar con la palabra let , ya que si declaro con la palabra
+var esta variable va a hacer de ambiente global en cambio con let es ambito de bloque
+
+
+° 
+
+
+-->

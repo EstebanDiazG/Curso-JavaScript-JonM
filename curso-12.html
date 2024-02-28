@@ -1,0 +1,36 @@
+<!--ARRAYS-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //se declaran con const
+        const a = [];
+        const b = [1,true,"ola",["a","b"]];
+
+        console.log(a);
+        console.log(b);
+        console.log(b.length);
+        console.log(b[2]);
+        console.log(b[0]);
+        console.log(b[3][1]);
+
+        //arreglos siempre comienzan desde el 0 
+
+
+        //otra forma de arreglo nos permite llenar elementos
+        const c = Array.of("a",2,4,"g");
+        console.log(c);
+
+        const productos = new Array(50).fill(false);
+
+        console.log(productos);
+
+    </script>
+</body>
+</html>

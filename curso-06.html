@@ -1,0 +1,39 @@
+<!--CADENAS DE TEXTO-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+      //cadena de texto aka strings 3 formas de escribir
+
+
+      let nombre = "esteban";
+      let apellido = "Diaz";
+      let saludo = new String ("hola mundo")//es muy formal y nadie la utiliza 
+      let lorem = "En un pequeño pueblo, Marta descubrió un antiguo libro mágico en el desván de su abuela. Al abrirlo, fue transportada a un mundo lleno de criaturas fantásticas. Con valentía, se unió a un grupo de aventureros para desentrañar un misterioso enigma que amenazaba ambos mundos. En su travesía, Marta aprendió a dominar poderes mágicos y descubrió la importancia de la amistad. Finalmente, con coraje y determinación, lograron restaurar el equilibrio entre los dos reinos, y Marta regresó a casa, llevando consigo lecciones que cambiarían su vida para siempre"
+
+      console.log(nombre,apellido,saludo);
+      console.log(nombre.toLocaleLowerCase(),apellido.toUpperCase(),saludo);
+      console.log(nombre.length,apellido.length,saludo.length);
+    
+      console.log(lorem.includes("pueblo"));//devuelve true o false si existe esa palabra en el texto.
+      console.log(lorem.includes("esteban"));
+      console.log(lorem.trim()); //quita espacios en blasnco
+      console.log(lorem.split(" ")); //los separa segun lo que ponga en el parentesis y devuelve un array 
+      
+
+    
+    
+    
+    </script>
+</body>
+</html>
+
+<!--si google MDN es la documentacion no oficial que la gente de mozila tiene para nosotros la documentacion sobre javascript-->

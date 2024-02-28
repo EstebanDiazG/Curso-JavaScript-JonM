@@ -1,0 +1,50 @@
+<!--OBJETOS-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//utilizamos const para declarar objetos
+//primera forma de inicializar un objeto
+const b = {
+
+}
+// segunda forma menos utilizada
+
+const c = new Object();
+
+// todos son atributos de mi objeto menos la funcion saludar 
+//dentro de un objeto a las variables se le llamaran atributos / propiedades y a las funciones se les llama metodos.
+
+const esteban = {
+    nombre: "esteban",
+    apellido: "diaz",
+    edad: 25,
+    pasatiempos: ["jugar","correr","leer"],
+    soltero: false,
+    contacto: {
+        email:"esteban@gmail.com",
+        cel: "9384908490"
+    },
+    saludar:function(){
+        console.log("hola")
+    }
+}
+
+console.log(esteban);
+//accediendo a mi propiedad y su valor
+console.log(esteban.edad);
+console.log(esteban.contacto.email);
+console.log(esteban.pasatiempos[0]);
+esteban.saludar;
+//la palabra this hace referencia al objeto y luego ponemos el atributo.
+
+    </script>
+</body>
+</html>
