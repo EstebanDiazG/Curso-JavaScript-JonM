@@ -1,0 +1,64 @@
+<!--Arrow Function-->
+
+
+<script>
+//funcion 
+const saludo = function(){
+    console.log("hola");
+}
+
+saludo();
+
+//arrow function
+const saludo2 = (nombre) => {
+    console.log(`Hola ${nombre}`);
+}
+
+saludo2("irma");
+
+
+
+// nos podemos evitar la palabra return
+
+const sumar = (a,b) =>{
+return a + b; 
+}
+
+console.log(sumar(5,5));
+
+
+//funcion de varias lineas
+
+
+const funcionlineas = () => {
+    console.log("1")
+    console.log("2")
+    console.log("3")
+}
+funcionlineas();
+const numeros = [1,2,3,4]
+
+numeros.forEach((el,index) =>{
+    console.log(`el elemento  ${el} esta en ${index}`)
+})
+
+
+
+//
+
+//objeto window
+function perro(){
+    console.log(this);
+}
+
+perro();
+
+
+const perro2 = {
+    nombre: "pelusa",
+    ladrar:() => {
+        console.log(this);
+    }
+}
+
+</script>

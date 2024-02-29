@@ -1,0 +1,63 @@
+<!--CONDICIONALES Y LOOPS-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//UNA ESTRUCTURA DE CONTROL 
+//IF - ELSE 
+
+let edad =17;
+
+if(edad >= 18 ){
+    console.log("eres mayor de edad")
+} else{
+    console.log("eres menor de edad ")
+}
+/*----------------------------------------*/
+
+if(edad > 17 ){
+    console.log("eres mayor de edad")
+} else{
+    console.log("eres menor de edad ")
+}
+
+/*--------------if - else if - else--------------------------*/
+/*
+dejame dormir 0hrs - 5hrs
+buenos dias 6hrs - 11hrs
+buenas tardes 12hrs -18hrs
+buenas noches 19hrs - 23hrs
+*/
+
+let hora = 6;
+
+if(hora >= 0 &&  hora <= 5){
+    console.log("dejame dormir")
+
+} else if(hora >= 6 &&  hora <= 11){
+    console.log("buenos dias")
+
+} else if(hora >= 12 &&  hora <= 18){
+    console.log("buenos dias")
+}else {
+    console.log("Buenas noches")
+}
+
+//operador ternario (condicion) ? verdadero : falsa
+
+console.log("operador ternario");
+let eresMayor =(edad >= 18)
+?"eres mayor de edad" 
+: "eres mejor de edad"
+console.log(eresMayor);
+
+//tambien existe swich _ case 
+    </script>
+</body>
+</html>

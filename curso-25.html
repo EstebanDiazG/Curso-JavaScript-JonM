@@ -1,0 +1,51 @@
+<!--clases y herencias-->
+
+<script>
+
+
+// funcion constructora
+class Animal{
+
+//el constructor es un metodo especial que se ejecuta en el momento de instanciar una clase
+constructor(nombre,genero){
+//atributos
+    this.nombre = nombre;
+    this.genero= genero;
+}   
+//metodos
+        sonar(){
+        console.log("hago sonidos porque estoy vivo");
+    }
+ 
+}
+
+
+class Perro extends Animal{
+    constructor(nombre,genero,tamanio){
+        //con el metodo super() se manda a llamar el constructor clase padre
+        super(nombre,genero);
+        this.tamanio = tamanio;
+    }
+
+    //metodos
+    sonar(){
+        console.log("hago ladrido porque soy un perro");
+    }
+
+    ladrar(){
+        console.log("guau guau");
+    }
+}
+
+const mimi =new Animal("Mimi", "Hembra"),
+    scooby = new Perro("Scooby","Macho");
+
+console.log(mimi);
+mimi.sonar();
+console.log(scooby);
+scooby.sonar();
+scooby.ladrar();
+
+
+
+</script>

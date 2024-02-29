@@ -1,0 +1,38 @@
+<!--OBJETOS LITERALES-->
+
+
+<script>
+
+
+//nueva forma de escribir metodos y atributos
+
+
+let nombre = "esteban",
+edad = 26;
+
+//manera sin literal
+const persona = {
+    nombre: nombre,
+    edad: edad,
+    hablar: function(){
+        console.log("hola");
+    }
+}
+
+console.log(persona);
+persona.hablar();
+
+//manera literal
+const persona2 = {
+    nombre,
+    apellido: "diaz",
+    edad,
+    hablar(){
+        console.log("hola holaaaaaa")
+    }
+} 
+
+console.log(persona2);
+persona.hablar();
+
+</script>

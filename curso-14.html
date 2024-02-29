@@ -1,0 +1,77 @@
+<!--TIPOS DE OPERADORES-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //operadores Arimeticos + - * / % ()
+        let a = 5 + (5 - 10) * 3;
+        //da resultado -10
+
+        let modulo = 5 % 2; //nos devuelve el residuo del modulo de la division
+
+        console.log(a)
+        console.log(modulo)
+
+        //operadores relacionales nos permiten comparar valores
+
+        // >,<, >=, <=, ==, ===, !=, !==
+
+        console.log(8 > 9); //falso
+        console.log(9 > 8); //verdadero
+        console.log(8 >= 9);//falso
+        console.log(9 >= 8);//true
+        console.log(7 < 7);// false
+        console.log(7 <= 7);// verdadero
+
+        /*
+        = 1 igual es asignacion de variable
+        == 2 iguales es comparacion de valores
+        === 3 iguales es comparacion de tipo de dato y de valor
+        */
+
+        console.log(7==7);
+        console.log("7"==7);
+        console.log("7"===7);//este da falso
+
+
+        // operadores de incremento y decremento
+
+        let i = 1;
+
+        i=i+2;
+        i += 3;
+
+        //operador unario
+        i++;
+        i--;
+        console.log(i);
+        console.log(i++);
+
+        // LOGICOS 
+
+        /* 
+        ! - NOT niega, es decir lo que es verdadero  lo vuelve falso
+        || - OR cuando tengo 2 o mas condiciones con que una se cumpla es decir sea verdadera el or validara
+        && and cuando tengo dos o mas condiciones todas tienen que cumplirse ser verdaderas para que and se ejecute
+        */
+
+        console.log(!true);
+        console.log(!false);
+        console.log((9===9) || ("9"===9));
+        console.log((9===9) && ("9"===9));
+
+
+
+
+
+
+    </script>
+</body>
+</html>

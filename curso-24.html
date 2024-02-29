@@ -1,0 +1,81 @@
+<!--HERENCIAS-->
+
+<script>
+    /*
+    clases - modelo a seguir(esquema)
+    objetos - una instancia de una clase
+        atributos - caracteristica o propiedad del objeto
+        metodos - son las acciones que un objeto puede realizar(funciones dentro de un objeto)
+    
+    */
+    
+    const animal = {
+        nombre: "snoopy",
+        sonar(){
+            console.log("hago sonidos porque estoy vivo");
+        }
+    }
+    
+    
+    const animal2 = {
+        nombre: "tazmania",
+        sonar(){
+            console.log("hago sonidos porque estoy vivo");
+        }
+    }
+    
+    console.log(animal);
+    console.log(animal2); 
+    
+    // funcion constructora
+    function Animal(nombre,genero){
+    //atributos
+        this.nombre = nombre;
+        this.genero= genero;
+    //metodos
+    this.sonar = function (){
+        console.log("hago sonidos porque estoy vivo");
+    }
+    }
+    
+//HERENCIA PROTOTIPICA
+
+function Perro (nombre,genero,tamanio){
+    this.super = Animal;
+    this.super(nombre, genero);
+    this.tamanio = tamanio;
+
+}
+
+//pero es la nueva instancia de Animal, perro hereda de animal
+Perro.prototype = new Animal();
+Perro.prototype.constructor = Perro;
+
+//sobreescritura de metodos del prototipo padre en el hijo
+Perro.prototype.sonar = function(){
+    console.log("Soy un perro y mi sonido es un ladrido");
+}
+
+//este metodo es exclusivo de perro
+Perro.prototype.ladrar = function(){
+    console.log("guau guau");
+}
+
+
+
+    const tazmania = new Perro("Tazmania","Macho"),
+     snoopy = new Animal("Snoopy","Macho");
+    
+    
+     //metodo agregado al prototipo de la funcion constructora
+     Animal.prototype.Saludar = function (){
+        console.log("Holaaaaa");
+    }
+    
+    
+    console.log(tazmania);
+    console.log(snoopy);
+
+    
+    
+    </script>
