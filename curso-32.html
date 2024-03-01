@@ -1,0 +1,21 @@
+<!-- expresiones regulares-->
+
+<script>
+
+//secuencia de caracteres que forman unpatron de busqueda 
+//no es esclusivo del lenguaje, deberia estar en cualquier lenguaje
+
+
+//primero patron y luego la bandera.
+
+let cadena = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum hic nulla, ad laborum animi lorem quae minima eum facilis sit quia?"
+let expReg = new RegExp("lorem","ig");
+//otra manera de declarar pero es lo mismo
+let expReg2 = /lorem/ig;
+let expReg3 = /lorem{1,3}/ig;
+
+console.log(expReg.test(cadena));
+console.log(expReg.exec(cadena));
+
+
+</script>

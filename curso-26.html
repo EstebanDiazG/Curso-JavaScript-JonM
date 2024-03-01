@@ -1,0 +1,45 @@
+<!--METODOS ESTATICOS,GETTERS Y SETTERS-->
+
+
+<script>
+//todas las clases son publicas 
+//un metodo estatico se puede ejecturar sin necesidad de instanciar la clase
+
+class Animal{
+
+//el constructor es un metodo especial que se ejecuta en el momento de instanciar una clase
+constructor(nombre,genero){
+//atributos
+    this.nombre = nombre;
+    this.genero= genero;
+    this.raza = null;
+}   
+//metodos
+        sonar(){
+        console.log("hago sonidos porque estoy vivo");
+    }
+
+//un metodo estatico se puede ejecturar sin necesidad de instanciar la clase    
+static queEres(){
+console.log("los perros somos animales mamiferos.")
+}
+
+//metodos setters y getter
+get getRaza(){
+    return this.raza;
+}
+
+set setRaza(raza){
+     this.raza = raza;  
+}
+
+}
+
+
+//los getter se llaman como propiedad no como funcion 
+//modifica los atributos del constructor con valor null
+scooby.getRaza;
+scooby.setRaza = "gran danes";
+
+
+</script>
